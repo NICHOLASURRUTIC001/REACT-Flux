@@ -2,21 +2,23 @@ import React, { useState, useEffect } from "react";
 import { Card } from "./card";
 //create your first component
 export function Starwars() {
-	const [people, setPeople] = useState([]);
+	const [films, setFilms] = useState([]);
 	useEffect(() => {
-		fetch("https://swapi.com/api/people/")
+		fetch("https://swapi.co/api/films/")
 			.then(resp => resp.json())
 			.then(data => {
-				setPeople(data.results);
+				setFilms(data.results);
 				console.log(data);
 			});
-	});
+	}, []);
 
 	return (
 		<>
-			<div className="d-flex justify-content-center">
-				{people.map((item, index) => {
-					return <Card key={index.name.gender} />;
+			<div className="card-group d-flex justify-content-center">
+				{films.map((item, index) => {
+					return (
+						<Card key={index} title={item.title} episode_id={item.episode_id} director={item.director} />
+					);
 				})}
 			</div>
 		</>
