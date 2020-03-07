@@ -6,7 +6,7 @@ export function Card(props) {
 		<div className="m-4" style={{ width: "300px" }}>
 			<img
 				className="card-img-top"
-				src="https://lh3.googleusercontent.com/proxy/l51enpwgSSBkpezvzbqORp1LGqZgZrZJbrcrX8U5g6tMAyuyeKGsEiaqodi2JahsaBq62l6TsjvcNVuOSlSIWBmdc4z5-0BWoX6w_8baajrsTA"
+				src="https://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG43.png"
 				alt="Card image cap"
 			/>
 			<div className="card-body">
@@ -18,7 +18,7 @@ export function Card(props) {
 					<div>{props.episode_id}</div>
 					<div>{props.director}</div>
 				</p>
-				<a href="#" className="btn btn-primary">
+				<a href="#" className="btn btn-warning">
 					Go to Profile
 				</a>
 			</div>

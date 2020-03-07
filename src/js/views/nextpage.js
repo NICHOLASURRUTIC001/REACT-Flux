@@ -33,14 +33,8 @@ export function Nextpage() {
 				<br />
 				<br />
 				<Link to="/">
-					<button className="btn btn-primary">Back home</button>
+					<button className="btn btn-secondary">Back home</button>
 				</Link>
-				<br />
-				<div>
-					<Link to="starwars">
-						<button className="btn btn-primary">Star Wars</button>
-					</Link>
-				</div>
 			</div>
 		</div>
 	);
